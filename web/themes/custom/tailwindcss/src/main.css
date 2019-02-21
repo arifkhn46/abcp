@@ -1,0 +1,106 @@
+
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+input {
+  @apply border border-grey;
+}
+
+.node__content p,
+.node__content ul,
+.node__content ol {
+  @apply mb-4 leading-normal;
+}
+
+.region-header {
+  @apply flex justify-between pt-3 pl-2 pr-2 h-10 shadow;
+}
+
+.region-header a {
+  @apply no-underline text-xs uppercase;
+}
+
+#block-tailwindcss-main-menu {
+  @apply bg-white w-3/4 text-sm h-screen z-10 fixed pin-t hidden
+}
+
+#block-tailwindcss-main-menu .menu{
+  @apply ml-0;
+}
+
+#block-tailwindcss-main-menu .menu-item {
+  @apply pl-4 pb-2 pt-2 border-b;
+}
+
+#block-tailwindcss-main-menu .menu-item a {
+  @apply tw-text-grey-dark;
+}
+
+a {
+  @apply no-underline
+}
+
+.overlay.show {
+  @apply block h-screen pin-t opacity-50 fixed w-full;
+  background: #000 none repeat scroll 0 0;
+}
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
