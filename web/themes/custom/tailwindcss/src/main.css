@@ -52,7 +52,7 @@ input {
 }
 
 .region-header a {
-  @apply no-underline text-xs uppercase;
+  @apply no-underline text-xs uppercase font-semibold;
 }
 
 #block-tailwindcss-main-menu {
@@ -80,6 +80,15 @@ a {
   background: #000 none repeat scroll 0 0;
 }
 
+/** Cart icon **/
+.cart-block--summary__icon {
+  background-image: url(/themes/custom/tailwindcss/images/cart-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 26px auto;
+  display: inline-block;
+  height: 45px;
+  width: 42px;
+}
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.

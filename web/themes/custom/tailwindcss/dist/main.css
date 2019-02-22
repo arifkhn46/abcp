@@ -596,6 +596,7 @@ input {
   text-decoration: none;
   font-size: .75rem;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 #block-tailwindcss-main-menu {
@@ -636,6 +637,17 @@ a {
   position: fixed;
   width: 100%;
   background: #000 none repeat scroll 0 0;
+}
+
+/** Cart icon **/
+
+.cart-block--summary__icon {
+  background-image: url(/themes/custom/tailwindcss/images/cart-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 26px auto;
+  display: inline-block;
+  height: 45px;
+  width: 42px;
 }
 
 /**
@@ -3088,6 +3100,10 @@ a {
   content: "" !important;
   display: table !important;
   clear: both !important;
+}
+
+.tw-font-open-sans {
+  font-family: Open Sans, Helvetica, Arial, sans-serif !important;
 }
 
 .tw-font-sans {
@@ -8774,6 +8790,10 @@ a {
     clear: both !important;
   }
 
+  .sm\:tw-font-open-sans {
+    font-family: Open Sans, Helvetica, Arial, sans-serif !important;
+  }
+
   .sm\:tw-font-sans {
     font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   }
@@ -14426,6 +14446,10 @@ a {
     content: "" !important;
     display: table !important;
     clear: both !important;
+  }
+
+  .md\:tw-font-open-sans {
+    font-family: Open Sans, Helvetica, Arial, sans-serif !important;
   }
 
   .md\:tw-font-sans {
@@ -20082,6 +20106,10 @@ a {
     clear: both !important;
   }
 
+  .lg\:tw-font-open-sans {
+    font-family: Open Sans, Helvetica, Arial, sans-serif !important;
+  }
+
   .lg\:tw-font-sans {
     font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   }
@@ -25734,6 +25762,10 @@ a {
     content: "" !important;
     display: table !important;
     clear: both !important;
+  }
+
+  .xl\:tw-font-open-sans {
+    font-family: Open Sans, Helvetica, Arial, sans-serif !important;
   }
 
   .xl\:tw-font-sans {

@@ -1,8 +1,9 @@
 <div{{ attributes}}>
   <div class="cart-block--summary">
-    <a class="cart-block--link__expand" href="{{ url }}">
-      <span class="cart-block--summary__icon">Cart</span>
-      <span class="cart-block--summary__count">{{ count }}</span>
+    <a class="cart-block--link__expand tw-relative tw-text-right" href="{{ url }}">
+      <span class="cart-block--summary__icon">
+        <span class="cart-block--summary__count">{{ count }}</span>
+      </span>
     </a>
   </div>
   {% if content %}

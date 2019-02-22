@@ -21,8 +21,11 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     <span class="mobile-menu-open">
-      <img src="/themes/custom/tailwindcss/images/menu-mob-menu.svg" alt="My Logo">
+      <img src="/themes/custom/tailwindcss/images/menu-mob-menu.svg" alt="Menu">
     </span>
     {{ content }}
+    <span class="mobile-menu-open">
+      <img src="/themes/custom/tailwindcss/images/mobile-more.svg" alt="User Menu">
+    </span>
   </div>
 {% endif %}
